@@ -1,0 +1,15 @@
+/* CSS: Cascading Style Sheets */
+/* 1. Nivel de Especificacion */
+/* Mientras menos elementos modifique, mas especifico */
+
+/* Estilo inline */
+/* Seleccion por Id */
+/* Seleccion por Class */
+/* Seleccion por etiqueta */
+/* Seleccion por *=todo */
+
+/* 2. Nivel: Lugar en la Cascada */
+
+* {
+  color: blue;
+}
