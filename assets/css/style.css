@@ -2,6 +2,7 @@
 /* 1. Nivel de Especificacion */
 /* Mientras menos elementos modifique, mas especifico */
 
+/* Uso del !important  */
 /* Estilo inline */
 /* Seleccion por Id */
 /* Seleccion por Class */
@@ -10,6 +11,90 @@
 
 /* 2. Nivel: Lugar en la Cascada */
 
-* {
+/* * {
   color: blue;
+} */
+
+/* a {
+  color: greenyellow !important;
+} */
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+[data-titulo-principal="true"] {
+  color: rebeccapurple;
+}
+[data-titulo-principal="false"] {
+  color: red;
+}
+a[ href="https://google.com"]{
+    color: aquamarine;
+}
+a[href^="http://127.0.0.1:3000/index.html"]{
+    color: brown;
+}
+#black {
+    color: black;
+}
+
+ul.elementos{
+    list-style: none;
+}
+
+ul.elementos li:first-child,
+ul.elementos li:last-child,
+ul.elementos li:nth-child(6){
+    background-color: blueviolet;
+    color: tomato;
+}
+ul.elementos li:nth-child(2n){
+    background-color: gray;
+    color: aliceblue;
+}
+ul.elementos li::first-letter{
+    font-size: 30px;
+    font-weight: 900;
+}
+p::selection{
+    background-color: black;
+    color: yellow;
+}
+.cuadrado{
+    background-color: aqua;
+    width: 5em;
+    height: 6em;
+}
+
+.articulo-principal{
+    font-size: 1rem;  
+}
+/* 1rem=16px */
+.articulo-principal h1{
+    font-size: 3em;
+}
+/* 3em=rem*3 */
+
+.subtitulo{
+    font-size: 1.25em;
+}
+.container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.viewport{
+    background-image: url("../images/Astronauta.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-size: auto 100vh;
+    width: 50vw;
+}
+
+.productos{
+    border-bottom: 1px solid #c50000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.productos:last-child{
+    border-bottom: none;
 }

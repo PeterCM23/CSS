@@ -4,16 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
 
     <!-- DOM -->
     <!-- Document Object Model -->
+<!-- Los elementos de bloque
+Utilizan el ancho maximo disponible
+Se organizan uno encima del otro
+Su altura depende de la altura del contenido -->
 
-    <h1>Hola mundo</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href=¨#">Error culpa minima amet numquam, qui tempore nesciunt enim</a> consequatur mollitia rem expedita dolore consequuntur perferendis? Provident fugit vel doloribus quisquam laborum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, rerum inventore quo harum voluptas assumenda consequuntur iste a enim, officiis illum reiciendis porro laudantium asperiores incidunt hic repellendus atque corporis!</p>
+<!-- data- : modificacion de atributo personalizada -->
+<article class="articulo-principal">
 
+    <div class="container">
+<div class="viewport"></div>
+    </div>
+
+
+    <h1 data-autor="Fulano" data-titulo-principal="true">Hola mundo</h1>
+    <div class="cuadrado"></div>
+    <p class="subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur consectetur amet nulla maxime accusamus, ratione adipisci error consequatur repellendus iste optio alias velit quisquam perspiciatis, sed repellat facilis ipsa vel?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="https://google.com">Error culpa minima amet numquam, qui tempore nesciunt enim</a> consequatur mollitia rem expedita dolore consequuntur perferendis? Provident fugit vel doloribus quisquam laborum!</p>
+
+    
+    <h2 data-titulo-principal="false">Adios mundo cruel</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="http://127.0.0.1:3000/index.html"> Beatae, rerum inventore quo</a> harum voluptas assumenda consequuntur iste a enim, officiis illum reiciendis porro laudantium asperiores incidunt hic repellendus atque corporis!</p>
+<ul class="elementos">
+    <li>Agua</li>
+    <li>aceite</li>
+    <li>barra</li>
+    <li>pan</li>
+    <li>habichuelas</li>
+    <li>jarron</li>
+    <li>biscolastico</li>
+    <li>magdalena</li>
+    <li>reportaje</li>
+    <li>huele</li>
+</ul>
+<ul class="productos">
+    <li class="productos">productos 01</li>
+    <li class="productos">productos 02</li>
+    <li class="productos">productos 03</li>
+    <li class="productos">productos 04</li>
+    <li class="productos">productos 05</li>
+    <li class="productos">productos 06</li>
+    <li class="productos">productos 07</li>
+    <li class="productos">productos 08</li>
+    <li class="productos">productos 09</li>
+    <li class="productos">productos 10</li>
+</ul>
+    </article>
+    
   </body>
 </html>
